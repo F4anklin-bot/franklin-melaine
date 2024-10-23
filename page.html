@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function f(){
+            alert("je t'ai dit de ne pas cliquer");
+        }
+    </script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center; /* Centre horizontalement */
+            align-items: center;    /* Centre verticalement */
+            height: 100vh;          /* Prend toute la hauteur de la fenêtre */
+            margin: 0;              /* Supprime les marges par défaut */
+            background-image: url(Luffy.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #noclick{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: solid black;
+            border-radius: 10px;
+            margin: auto;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+        }
+        #noclick:hover {
+            background-color: beige;
+            text-emphasis-color: blue;
+            scale(1.2)
+        }
+    </style>
+</head>
+<body>
+    <button id="noclick" onclick="f()">Ne clique pas sur le bouton</button>
+</body>
+</html>
